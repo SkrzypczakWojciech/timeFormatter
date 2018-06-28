@@ -1,5 +1,5 @@
 var os = require('os');
-
+function timeformatter() {
 process.stdin.setEncoding('utf-8');
 process.stdout.write('Podaj liczbe sekund' + '\n')
 process.stdin.on('readable', function() {
@@ -9,3 +9,5 @@ process.stdin.on('readable', function() {
         process.stdout.write('Godziny :' + input / 3600 + '\n')
        };
     });
+}
+exports.print = timeformatter;
