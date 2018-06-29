@@ -15,9 +15,6 @@ process.stdin.on('readable', function() {
             case '/sayhello':
                 process.stdout.write('hello!\n');
                 break;
-            case '/timeformatter':
-                process.stdout.write('Podaj liczbe sekund\n');
-                break;
             case '/getOSinfo':
             	process.stdout.write('info o systemie')
             	OSinfo.print();
